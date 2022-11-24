@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Digital Clock</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="shortcut icon" href="assets/clock.svg" type="image/svg" />
+		<meta charset="UTF-8" />
+	</head>
+	<body>
+		<time></time>
+		<script>
+			const clock = document.getElementsByTagName('time')[0];
+			setInterval(() => (clock.innerHTML = new Date().toLocaleTimeString(navigator.language)), 10);
+		</script>
+	</body>
+</html>
